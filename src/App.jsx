@@ -30,7 +30,6 @@ const App = () => {
     const fetchproduct = async () => {
       try {
         const response = await fetch("http://localhost:5000/products");
-        // const response = await fetch("https://fakestoreapi.com/products");
 
         const data = await response.json();
         setproduct(data);
